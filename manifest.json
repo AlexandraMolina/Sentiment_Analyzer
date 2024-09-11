@@ -1,0 +1,44 @@
+{
+    "name": "Sentiment analysis",
+    "short_name": "SentimentApp",
+    "description": "Analyze the sentiment of any text quickly",
+    "start_url": "./?utm_source=web_app_manifest",
+    "display": "standalone",
+    "background_color": "#D8BFD8",
+    "theme_color": "#D8BFD8",
+    "orientation": "portrait",
+    "scope": "./",
+    "lang":"es-MX",
+    "icons":[
+    {
+        "src": "./img/icon1024.png",
+        "sizes": "1024x1023",
+        "type": "image/png"
+    },
+    {
+        "src": "./img/icon512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+    },
+    {
+        "src": "./img/icon384.png",
+        "sizes": "384x384",
+        "type": "image/png"
+    }
+
+    ],
+    "screenshots": [
+   {
+     "src": "./img/screenshot.png",
+     "type": "image/png",
+     "sizes": "1919x908",
+     "form_factor": "wide"
+   },
+   {
+     "src": "./img/screenshot_mov.png",
+     "type": "image/png",
+     "sizes": "401X823"
+   }
+ ]
+
+  }

@@ -1,0 +1,28 @@
+body {
+    background-image:url("https://img.freepik.com/vector-gratis/vector-fondo-emoticonos-lindos-diversos-sentimientos-estilo-doodle_53876-105660.jpg?t=st=1726057432~exp=1726061032~hmac=3cc80cd3759b630aabffe3a74828b64f2ffa5aede89d637fe4f4f24c119828de&w=1380");
+    background-size: 100%;
+    color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto; 
+    height: 100vh;
+    box-sizing: border-box;
+   
+}
+h2{
+    
+    font-size: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', 'Arial', 'sans-serif';
+}
+
+.container {
+    background: linear-gradient(to bottom right, rgb(138, 118, 170, 0.452),pink );
+    padding: 30px;
+    border-radius: 15px;
+    max-height: 100vh;
+    box-sizing: border-box; 
+}
+
