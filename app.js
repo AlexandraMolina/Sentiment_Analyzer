@@ -7,7 +7,10 @@ document.getElementById("sentimentForm").addEventListener("submit", function(e) 
         alert("Write your feelings, please.");
         return;
     }
-
+    document.getElementById("clearButton").addEventListener("click", function() {
+        document.getElementById("inputText").value = ""; // Limpiar texto
+        document.getElementById("result").innerHTML = ""; // Limpiar resultado
+    });
     // Procesando texto
     document.getElementById("result").innerHTML = "<p>Analyzing the Sentiment...</p>";
 
