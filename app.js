@@ -35,16 +35,20 @@ document.getElementById("sentimentForm").addEventListener("submit", function(e) 
 
             let sentimentText = "";
             let sentimentGifUrl = "";
+            let commentsentiment="";
 
             if (sentiment == "negative") {
                 sentimentText = "Negative 😞";
                 sentimentGifUrl = "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2wydGRwM3p3NWlpbXUwbDMwdHZjaGMweXVpNTBrbnYxcnZlOGllMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/dXckBa1HDG86RqUh19/giphy.webp";
+                commentsentiment = "You are not alone in this. Every day is a new opportunity to improve!"
             } else if (sentiment == "neutral") {
                 sentimentText = "Neutral 😐";
                 sentimentGifUrl = "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdTI3dXNidGhrazg1NW40MHBwcHR6dXNvc2JvZnZnMHB5c2lja2w5dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/H47VxJRkvQU3a7FOPf/giphy.webp";
+                commentsentiment = "Remember that it's okay to have quiet days. Every emotion counts on the path of growth"
             } else if (sentiment == "positive") {
                 sentimentText = "Positive 😊";
                 sentimentGifUrl = "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExa3B1ODJlbHl0aDhweXp5a3lpNGV4NHoxNDY1dHZ1d2NjZm85cWVvbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/TdfyKrN7HGTIY/giphy.webp";
+                commentsentiment= "Amazing! It's a great moment to share it with others"
             }
 
             //Imprimir resultado
@@ -56,7 +60,7 @@ document.getElementById("sentimentForm").addEventListener("submit", function(e) 
               if (Notification.permission === "granted") {
                 navigator.serviceWorker.ready.then(registration => {
                     registration.showNotification("Sentiment Result", {
-                        body: sentiment === "negative" ? `${sentimentText}\nYou are not alone in this. Every day is a new opportunity to improve!` : `detected Sentiment: ${sentimentText}`,
+                        body: `Sentimiento detectado: ${sentimentText}\n${commentsentiment}`,
                     });
                 });
             } else if (Notification.permission !== 'denied') {
@@ -64,7 +68,7 @@ document.getElementById("sentimentForm").addEventListener("submit", function(e) 
                     if (permission === "granted") {
                         navigator.serviceWorker.ready.then(registration => {
                             registration.showNotification("Sentiment Result", {
-                                body: `detected Sentiment: ${sentimentText}`,
+                                body: `Sentimiento detectado: ${sentimentText}\n${commentsentiment}`,
                             });
                         });
                     }
