@@ -17,5 +17,4 @@ Se han incorporado imágenes y GIFs relacionados con las emociones para hacer la
 Se he implementado notificaciones push para alertar al usuario sobre el resultado del análisis de sentimientos. 
 
 ## Enlace de la web
-https://sentiment-analyzer-nine.vercel.app
-
+https://sentiment-analyzer-chi.vercel.app
