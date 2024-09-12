@@ -2,11 +2,8 @@
 
 ## Instrucciones para ejecutar la aplicación localmente
 
-* Descargar e instalar el XAMPP.
-* Asegurarse que contenga los paquetes que incluye el apache y php.
-* Solo es necesario iniciar el módulo de apache.
-* Situar el código en la carpeta htdocs dentro del directorio de instalación de XAMPP.
-* Abrir navegador e indicar la ruta en la que está el proyecto.
+* Descargar el repositorio 
+* Abrir con el navegador el archivo index.html
 
 ## Decisiones Tomadas 
 
